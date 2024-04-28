@@ -10,7 +10,7 @@ function App() {
         <div className="max-w-md mx-auto">
           <div className="flex items-center justify-center">
             <span>
-              <img src="/main-logo.svg" alt="Icon" className="mr-2" width="40" height="40" />
+              <img src="./main-logo.svg" alt="Icon" className="mr-2" width="40" height="40" />
             </span>
             <h1 className="text-2xl font-semibold">Nudge</h1>
           </div>
