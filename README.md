@@ -13,9 +13,22 @@ Add the following lines to package.json
 
   "homepage": "https://sanju9645.github.io/ReactLogin",
 
-run, npm i gh-pages
+run,
+   npm i gh-pages --save-dev
 
 
-  "scripts": {
+"scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+
+  on vite.config.js
+
+  export default defineConfig({
+  base: '/ReactLogin/',
+  plugins: [react()],
+})
